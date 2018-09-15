@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'archivobold';
+    src: url('../assets/fonts/archivo-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/archivo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'archivobold_italic';
+    src: url('../assets/fonts/archivo-bolditalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/archivo-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'archivoitalic';
+    src: url('../assets/fonts/archivo-italic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/archivo-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'archivomedium';
+    src: url('../assets/fonts/archivo-medium-webfont.woff2') format('woff2'),
+         url('../assets/fonts/archivo-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'archivomedium_italic';
+    src: url('../assets/fonts/archivo-mediumitalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/archivo-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'archivoregular';
+    src: url('../assets/fonts/archivo-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/archivo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'archivosemibold';
+    src: url('../assets/fonts/archivo-semibold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/archivo-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'archivosemibold_italic';
+    src: url('../assets/fonts/archivo-semibolditalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/archivo-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'chivoblack';
+    src: url('../assets/fonts/chivo-black-webfont.woff2') format('woff2'),
+         url('../assets/fonts/chivo-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'chivobold';
+    src: url('../assets/fonts/chivo-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/chivo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'courier_primebold_italic';
+    src: url('../assets/fonts/courier_prime_bold_italic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/courier_prime_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'courier_primebold';
+    src: url('../assets/fonts/courier_prime_bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/courier_prime_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'courier_primeitalic';
+    src: url('../assets/fonts/courier_prime_italic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/courier_prime_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'courier_primeregular';
+    src: url('../assets/fonts/courier_prime-webfont.woff2') format('woff2'),
+         url('../assets/fonts/courier_prime-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$bold: 'archivobold';
+$regular: 'archivoregular';
+$italic: 'archivoitalic';
+$headerBold:'chivobold';
+$scriptBold: 'courier_primebold';

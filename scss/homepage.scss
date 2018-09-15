@@ -1,0 +1,67 @@
+.hello-banner {
+	height: 400px;
+	background: linear-gradient(90deg, #9ad3de 50%, #89bdd3 50%);
+	text-transform: uppercase;
+	.left {
+		float: left;
+		color: white;
+		font-family: $scriptBold !important;
+		h2 {
+			text-align: right;
+			font-size: 8em;
+			line-height: 0.7em;
+			padding-right: 1em;
+		}
+
+	}
+	.right {
+		float: right;
+		color: white;
+		font-family: $headerBold !important;
+		h2 {
+			font-size: 8em;
+			line-height: 0.7em;
+			padding-left: 1em;
+		}
+	}
+}
+
+.about-me {
+	background-color: $bg;
+	h3 {
+		color: $brighter;
+		text-transform: uppercase;
+		font-family: $bold;
+	}
+}
+
+.my-work {
+	background-color: $dark;
+}
+
+.the-blog {
+	h3 {
+		color: $lighter;
+		text-transform: uppercase;
+		font-family: $bold;
+	}
+	.latest-news {
+		padding: 1em;
+		h5 {
+			margin-bottom: 0;
+			a {
+				font-family: $bold;
+					color: $text;
+					text-transform: uppercase;
+			}
+		}
+		.post-banner {
+			position: relative;
+			.classic-button {
+				bottom: 0;
+				position: absolute;
+			}
+		}
+		
+	}
+}

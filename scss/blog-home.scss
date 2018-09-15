@@ -1,0 +1,32 @@
+.news-container {
+	.single-blog{
+		.the-post {
+			padding: 1em;
+			background: white;
+			text-align: left;
+			.postInfo {
+				border-bottom: 1px solid $bright;
+				padding-top: 0.5em;
+				.postDate {
+					span {
+						color: $brighter;
+					
+					}
+					
+				}
+				
+			}
+			.the-excerpt {
+				padding: 1em 0;
+			}
+			h5 {
+				a{
+					font-family: $bold;
+					color: $text;
+					text-transform: uppercase;
+				}
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,196 @@
+$thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
+
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+	border: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	text-transform: uppercase;
+	color: $text;
+ 	font-family: $bold;
+ 	
+}
+
+#cssmenu {
+	height: 71px;
+	display: block;
+	padding: 0;
+	margin: 0;
+	width: auto;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+	
+}
+#cssmenu,
+#cssmenu > ul > li > ul > li a:hover {
+	
+}
+#cssmenu > ul {
+	list-style: inside none;
+	padding: 0;
+	margin: 0;
+}
+#cssmenu > ul > li {
+	list-style: inside none;
+	padding: 0;
+	margin: 0;
+	float: left;
+	display: block;
+	position: relative;
+}
+#cssmenu > ul > li > a {
+	outline: none;
+	display: block;
+	position: relative;
+	padding: 12px 20px;
+	text-align: center;
+	text-decoration: none;
+	&:hover {
+		color: $bright;
+ 	}
+ 	&:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		bottom: 0;
+		left: 0;
+		background-color: $brighter;
+		height: 2px;
+		visibility: hidden;
+		-webkit-transform: scaleX(0);
+		transform: scaleX(0);
+		-webkit-transition: $thetransition;
+		transition: $thetransition;
+	}
+	&:hover:before {
+		visibility: visible;
+		-webkit-transform: scaleX(1);
+		transform: scaleX(1);
+	}
+	 
+}
+#cssmenu > ul > li > a:hover {
+	
+}
+#cssmenu > ul > li:first-child > a {
+	
+}
+#cssmenu > ul > li > a:after {
+	content: '';
+	position: absolute;
+	
+	top: -1px;
+	bottom: -1px;
+	right: -2px;
+	z-index: 99;
+	
+}
+
+#cssmenu ul li.has-sub:hover > a:after {
+	top: 0;
+	bottom: 0;
+}
+#cssmenu > ul > li.has-sub > a:before {
+	content: '';
+	position: absolute;
+	top: 32px;
+	right: 6px;
+	
+}
+#cssmenu > ul > li.has-sub:hover > a:before {
+	top: 40px;
+}
+#cssmenu ul li.has-sub:hover > a {
+	padding-bottom: 13px;
+	padding-top: 13px;
+	top: -1px;
+	z-index: 999;
+	text-transform: uppercase;
+	color: $text;
+	font-family: $bold;
+	&:hover {
+		color: $bright;			
+ 	}
+ 	&:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		bottom: 0;
+		left: 0;
+		background-color: $brighter;
+		height: 2px;
+		visibility: hidden;
+		-webkit-transform: scaleX(0);
+		transform: scaleX(0);
+		-webkit-transition: $thetransition;
+		transition: $thetransition;
+	}
+	&:hover:before {
+		visibility: visible;
+		-webkit-transform: scaleX(1);
+		transform: scaleX(1);
+	}
+
+}
+#cssmenu ul li.has-sub:hover > ul,
+#cssmenu ul li.has-sub:hover > div {
+	display: block;
+	background: white;
+	text-align: left;
+}
+#cssmenu ul li.has-sub > a:hover {
+	color: $brighter;
+	
+}
+#cssmenu ul li > ul,
+#cssmenu ul li > div {
+	display: none;
+	width: auto;
+	position: absolute;
+	top: 41px;
+
+	
+	z-index: 999;
+}
+#cssmenu ul li > ul {
+	width: 200px;
+}
+#cssmenu ul li > ul li {
+	display: block;
+	list-style: inside none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+#cssmenu ul li > ul li a {
+	outline: none;
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 8px 20px;
+	
+	text-decoration: none;
+	
+}
+#cssmenu ul ul a:hover {
+	
+}
+#cssmenu > ul > li.has-sub > a:hover:before {
+	
+}

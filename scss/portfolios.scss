@@ -1,0 +1,83 @@
+.port-banner {
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.the-portfolio {
+	h1{
+		color: $darker;
+		text-align: center;
+		padding: 1em 0;
+	}
+	.about-port {
+		background-color: $bg;
+		text-align: left;
+		padding: 2em 0;
+    	margin: 2em 0;
+		.port-inner {
+			width: 50%;
+			margin: 0 auto;
+			h3{
+				color: $bright;
+				font-family: $bold;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.portfolio-images {
+		height: 500px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		margin: 4em 0;
+	}
+	.project-testimonial {
+		background-color: $light;
+		font-family: $italic;
+		color: $text;
+		padding: 2em 0;
+		margin: 2em 0;
+	}
+
+	.gallery {
+		dl.gallery-item {
+			float: left;
+			padding: 0;
+			margin: 0;
+		}
+		.gallery br {
+	    	display: none;
+		}
+	}
+
+	
+}
+
+.details {
+	background: $bg;
+	color: $text;
+	margin: 2em 0;
+	.inner-details {
+		padding: 2em 0;
+		.three.columns {
+			padding: 0 1em;
+		}
+		span.info {
+			font-size: 0.8em;
+			
+		}
+		p {
+			font-family: $bold;
+			border-top: 1px solid $text;
+			a {
+				color: $text;
+				&:hover {
+					color: $bright;
+				}
+			}
+		}
+	}
+}

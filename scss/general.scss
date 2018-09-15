@@ -1,0 +1,178 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: $text;
+	text-rendering: geometricPrecision;
+	font-family: $regular;
+}
+ p{
+ 	font-family: $regular;
+ }
+
+h1, h2, h3, h4, h5, h6 {
+	// font-family: $regular;
+}
+a {
+	text-decoration: none;
+}
+
+.site-container {
+	display: block;
+
+	background: white;
+}
+
+.biggie {
+	width: 90%;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+/** sidebars **/
+.bar-side {
+    display: none;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 40;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #909090;
+    font-weight: 400;
+    width: 50px;
+
+    .abs {
+	    display: inline-block;
+	    position: absolute;
+	    top: 50%;
+	    left: 24px;
+	    width: 300px;
+	    height: 12px;
+	    line-height: 12px;
+	    margin-top: 150px;
+	    text-align: center;
+	    -moz-transform: rotate(-90deg);
+	    -ms-transform: rotate(-90deg);
+	    -webkit-transform: rotate(-90deg);
+	    transform: rotate(-90deg);
+	    -moz-transform-origin: 0 0;
+	    -ms-transform-origin: 0 0;
+	    -webkit-transform-origin: 0 0;
+	    transform-origin: 0 0;
+	}
+		.abs.right-side {
+	    left: auto;
+	    right: 34px;
+	    -moz-transform-origin: 100% 100%;
+	    -ms-transform-origin: 100% 100%;
+	    -webkit-transform-origin: 100% 100%;
+	    transform-origin: 100% 100%;
+	    -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	    -webkit-transform: rotate(90deg);
+	    transform: rotate(90deg);
+	}
+
+	.thb-quick-portfolio {
+	    position: absolute;
+	    top: 80px;
+	    right: 100%;
+	    bottom: 0;
+	    display: flex;
+	    text-align: left;
+	    visibility: hidden;
+	    width: 300px;
+	}
+}
+
+@media only screen and (min-width: 64.063em) {
+	.bar-side {
+    display: block;
+}
+}
+
+
+#bar-right {
+    right: 0;
+}
+
+.quote {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid;
+	p{
+		font-family: $bold;
+		text-transform: uppercase;
+		font-size: 7rem;
+		line-height: 0.8em;
+		margin-bottom: 0;
+	}
+	h5 {
+		color: $text;
+		font-family: $italic;
+		text-align: right;
+	}
+}
+
+
+.bar-side .thb-quick-portfolio .thb-quick-inner .quick-portfolio .qp-content {
+    flex: 4;
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space: pre-wrap;
+}
+
+.bar-side .thb-quick-portfolio .thb-quick-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.thb-quick-portfolio {
+    position: absolute;
+    width: 1000px;
+    height: 450px;
+    background: red;
+    overflow: hidden;
+    z-index: 10000;
+    display: none;
+}
+#menu:hover + .thb-quick-portfolio {
+    display: block;
+}
+
+/** siderbar ends **/
+
+.bright {
+	color: $bright;
+}
+
+.brighter {
+	color: $brighter;
+}
+.light {
+	color: $light;
+}
+.lighter {
+	color: $lighter;
+}
+
+.classic-button {
+	padding: 0.5em 0;
+	background-color: $bright;
+	padding: 1em;
+	color: white;
+	float: right;
+	&:hover {
+		background: $text;
+		color: white;
+	}
+}
