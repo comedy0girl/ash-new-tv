@@ -13,7 +13,7 @@ include (TEMPLATEPATH . '/includes/_sides.php');?>
 	$wp_query->is_home = false; ?>
 	<div class="news-container twelve columns biggie"><?php 
 		while(have_posts()): the_post(); ?>
-			<div class="nine columns single-blog"><?php 
+			<div class="twelve columns single-blog"><?php 
 				$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
 				<div class="post-banner" style="background-image:url('<?php echo $backgroundImg[0]; ?>');">
@@ -37,10 +37,10 @@ include (TEMPLATEPATH . '/includes/_sides.php');?>
 			  	</div>
 			</div><?php 
 		endwhile; ?>
-		<div class="clearfix"></div>
+		<!-- <div class="clearfix"></div>
 		<div class="two columns blog-sidebar">
 			<?php dynamic_sidebar( 'blog_sidebar' ); ?>
-		</div>
+		</div> -->
 	</div>
 
 </div>

@@ -34,12 +34,14 @@ include (TEMPLATEPATH . '/includes/_sides.php');
 
 		<div class="twelve columns gallery">
 			<h3>Full Gallery</h3>
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			<?php the_content(__('(more...)')); ?>
-			
-			<?php endwhile; else: ?>
-			<?php _e('Sorry, we couldn’t find the post you are looking for.'); ?>
-			<?php endif; ?>
+			<div class="gallery-inner">
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<?php the_content(__('(more...)')); ?>
+				
+				<?php endwhile; else: ?>
+				<?php _e('Sorry, we couldn’t find the post you are looking for.'); ?>
+				<?php endif; ?>
+			</div>
 		</div>
 	</div>
 </div>

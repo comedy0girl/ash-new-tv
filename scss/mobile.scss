@@ -7,3 +7,38 @@
    		}
    	} 
 }
+
+@media only screen and (max-width : 880px) {
+	#cssmenu>ul>li>a {
+	padding-left:13px;
+	padding-right: 13px;
+	
+}
+
+
+}
+
+@media only screen and (max-width : 800px) {
+	.hello-banner {
+		.right {
+			h2 {
+				padding-left: 0;
+			}
+		}
+		.left {
+			h2 {
+				padding-right: 0;
+			}
+		} 
+	}
+
+}
+
+@media only screen and (max-width : 550px) { 
+	.quote {
+		p{
+			font-size: 4.5rem;
+		}
+	}
+
+}

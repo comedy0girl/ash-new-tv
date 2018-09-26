@@ -176,3 +176,12 @@ a {
 		color: white;
 	}
 }
+
+#canvas {
+	width: 100%;
+    background: $darkBG;
+    .error-inner {
+    	margin-top: -5em !important;
+    	text-align: center;
+    }
+}
