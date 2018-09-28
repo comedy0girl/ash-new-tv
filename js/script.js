@@ -20,9 +20,18 @@ $(document).ready(function() {
   });
 
 
-   $('#cssmenu').responsiveMenu({
-    breakpoint: '800'
-  });
+
+   //wrap all iframe videos in class to make responsive
+    var $iframes = $("iframe");
+
+    $iframes.each(function () {
+        $(this).removeAttr("width");
+        $(this).removeAttr("height");
+        $(this).wrap("<div class='videowrapper'></div>");
+    });
+
+
+
 
 
 
