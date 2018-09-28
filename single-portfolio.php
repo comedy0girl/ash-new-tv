@@ -21,7 +21,8 @@ include (TEMPLATEPATH . '/includes/_sides.php');
 			</div>
 		</div>
 	
-		<div class="portfolio-images" style="background-image:url('<?php echo $image1 ?>');"></div>
+		<div class="six columns portfolio-images" style="background-image:url('<?php echo $image1 ?>');"></div>
+		<div class="six columns portfolio-images" style="background-image:url('<?php echo $image2 ?>');"></div>
 
 		<div class="quote brighter">
 			<?php if( get_field('project_quote') ): ?>
@@ -30,7 +31,6 @@ include (TEMPLATEPATH . '/includes/_sides.php');
 			<?php endif; ?>
 		</div>
 
-		<div class="portfolio-images" style="background-image:url('<?php echo $image2 ?>');"></div>
 
 		<div class="twelve columns gallery">
 			<h3>Full Gallery</h3>

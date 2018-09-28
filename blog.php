@@ -40,7 +40,11 @@ include (TEMPLATEPATH . '/includes/_sides.php');?>
 		<!-- <div class="clearfix"></div>
 		<div class="two columns blog-sidebar">
 			<?php dynamic_sidebar( 'blog_sidebar' ); ?>
+
+
 		</div> -->
+
+		<?php wp_pagenavi(); ?>
 	</div>
 
 </div>

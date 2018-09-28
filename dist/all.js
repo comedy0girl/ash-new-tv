@@ -20,6 +20,12 @@ $(document).ready(function() {
   });
 
 
+   $('#cssmenu').responsiveMenu({
+    breakpoint: '800'
+  });
+
+
+
   var canvas = document.getElementById('canvas'),
     ctx = canvas.getContext('2d');
 

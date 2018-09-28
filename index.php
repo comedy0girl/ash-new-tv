@@ -31,26 +31,21 @@
 	</div>
 
 	<div class="twelve columns my-work biggie">
-		<h3>Some work...</h3>
+		<h3>Some work...</h3><?php
+			$posts = get_posts(array(
+			    'meta_query' => array(
+			        array(
+			            'key' => 'feature_this', // name of custom field
+			            'value' => 'yes',
+			        )
+			    )
+			));
 
-		<?php
+			if( $posts ) {
 
-$posts = get_posts(array(
-    'meta_query' => array(
-        array(
-            'key' => 'feature_this', // name of custom field
-            'value' => 'yes',
-        )
-    )
-));
-
-if( $posts ) {
-
-	echo ("we have posts");
-    //...
-}
-
-?>
+				echo ("we have posts");
+			    //...
+			}?>
 
 
 			

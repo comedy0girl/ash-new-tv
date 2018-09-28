@@ -33,6 +33,19 @@
 	}
 
 }
+@media only screen and (max-width : 600px) {
+	.header-inner {
+		.left {
+			img {
+				max-width: 90%;
+			}
+		}
+	} 
+		.news-container {
+			padding: 2em;
+		}
+
+}
 
 @media only screen and (max-width : 550px) { 
 	.quote {
@@ -42,3 +55,14 @@
 	}
 
 }
+
+
+
+
+@media only screen and (max-width : 500px) { 
+	.hello-banner.biggie {
+		display: none;
+	}
+
+}
+
