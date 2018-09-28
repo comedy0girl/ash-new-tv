@@ -83,6 +83,22 @@
 	.hello-banner.biggie {
 		display: none;
 	}
+	.port-banner {
+		background-size: contain;
+	}
+	.the-portfolio {
+		.about-port {
+			padding: 0;
+			margin: 0;
+		}
+		.portfolio-images {
+			background-size: contain;
+			height: 300px;
+			margin: 0;
+			margin-bottom: 1em;
+
+		}
+	}
 
 }
 

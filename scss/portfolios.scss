@@ -74,6 +74,7 @@
 			border-top: 1px solid $text;
 			a {
 				color: $text;
+				font-family: $bold;
 				&:hover {
 					color: $bright;
 				}
