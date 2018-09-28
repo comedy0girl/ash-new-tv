@@ -41,9 +41,17 @@
 			}
 		}
 	} 
-		.news-container {
-			padding: 2em;
+	.news-container {
+		padding: 2em;
+	}
+	.port-container {
+		padding: 1em;
+		.right.image {
+			background-size: contain;
+			height: 300px;
+			background-repeat: no-repeat;
 		}
+	}
 
 }
 

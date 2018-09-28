@@ -1,8 +1,8 @@
 .port-banner {
-	height: 400px;
+	height: 500px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+	background-size: initial;
 }
 
 .the-portfolio {
@@ -79,5 +79,29 @@
 				}
 			}
 		}
+	}
+}
+
+
+
+.port-container {
+	background-color: $bg;
+	padding: 2em 4em;
+	margin-bottom: 2em;
+	li {
+		list-style: none;
+		h4 {
+			color: $brighter;
+    		text-transform: uppercase;
+    		font-family: $bold;
+    		margin-bottom: 0;
+    		&:hover {
+    			color: $lighter;
+    		}
+		}
+	}
+	.right.image {
+		height: 600px;
+		background-position: center top;
 	}
 }
