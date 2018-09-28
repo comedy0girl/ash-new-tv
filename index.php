@@ -31,9 +31,10 @@
 	</div>
 
 	<div class="twelve columns my-work biggie">
-		<h3>Some work...</h3>
-		<div class="featured-slider"><?php 
-		echo do_shortcode( ' [slide-anything id='2046']' ); ?>
+		<h3>Some of my work...</h3>
+		<div class="ten columns featured-slider"><?php 
+echo do_shortcode('[smartslider3 slider=2]');
+?>
 		
 		</div>
 				  
