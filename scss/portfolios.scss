@@ -100,9 +100,14 @@
     			color: $lighter;
     		}
 		}
+		
 	}
+	.row.twelve.columns.user-inputted {
+			margin-bottom: 2em;
+		}
 	.right.image {
 		height: 600px;
 		background-position: center top;
+		background-repeat: no-repeat;
 	}
 }
