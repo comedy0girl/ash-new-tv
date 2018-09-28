@@ -1,0 +1,6 @@
+## Directories to ignore
+js/**
+scss/**
+
+## Files to ignore
+package.json

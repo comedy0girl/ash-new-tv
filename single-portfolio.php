@@ -20,9 +20,11 @@ include (TEMPLATEPATH . '/includes/_sides.php');
 				<p><?php echo $blurb ?></p>
 			</div>
 		</div>
-	
+
+	<div class="twelve columns images container">
 		<div class="six columns portfolio-images" style="background-image:url('<?php echo $image1 ?>');"></div>
 		<div class="six columns portfolio-images" style="background-image:url('<?php echo $image2 ?>');"></div>
+	</div>
 
 		<div class="quote brighter">
 			<?php if( get_field('project_quote') ): ?>
