@@ -9,6 +9,11 @@ include (TEMPLATEPATH . '/includes/_sides.php');
 <div class="container">
     <div class="port-container twelve columns">
         <div class="twelve columns biggie">
+        	<p><?php 
+            if (have_posts()) : while (have_posts()) : the_post(); the_content(__('(more...)')); 
+                endwhile; else: 
+                 _e('Sorry, we couldn’t find the post you are looking for.'); 
+                endif; ?></p>
         	<div class="six columns left"><?php
 				$args = array(
 				    'post_type'      => 'page',
