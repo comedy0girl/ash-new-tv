@@ -43,6 +43,11 @@
 	}
 
 	.gallery {
+		h3 {
+			text-transform: uppercase;
+			font-family: $bold;
+			color: $text;
+		}
 		dl.gallery-item {
 			float: left;
 			padding: 0;
