@@ -33,6 +33,27 @@
 	}
 
 }
+@media only screen and (max-width : 600px) {
+	.header-inner {
+		.left {
+			img {
+				max-width: 90%;
+			}
+		}
+	} 
+	.news-container {
+		padding: 2em;
+	}
+	.port-container {
+		padding: 1em;
+		.right.image {
+			background-size: contain;
+			height: 300px;
+			background-repeat: no-repeat;
+		}
+	}
+
+}
 
 @media only screen and (max-width : 650px) {
 	.the-portfolio {
@@ -54,3 +75,34 @@
 	}
 
 }
+
+
+
+
+@media only screen and (max-width : 500px) { 
+	.hello-banner.biggie {
+		display: none;
+	}
+	.post-banner, 
+	.port-banner {
+		background-size: contain;
+		height: 300px;
+		background-repeat: no-repeat;
+		    background-position: center;
+	}
+	.the-portfolio {
+		.about-port {
+			padding: 0;
+			margin: 0;
+		}
+		.portfolio-images {
+			background-size: contain;
+			height: 300px;
+			margin: 0;
+			margin-bottom: 1em;
+
+		}
+	}
+
+}
+

@@ -31,33 +31,11 @@
 	</div>
 
 	<div class="twelve columns my-work biggie">
-		<h3>Some work...</h3>
-
-		<?php
-
-$posts = get_posts(array(
-    'meta_query' => array(
-        array(
-            'key' => 'feature_this', // name of custom field
-            'value' => 'yes',
-        )
-    )
-));
-
-if( $posts ) {
-
-	echo ("we have posts");
-    //...
-}
-
+		<h3>Some of my work...</h3>
+		<div class="ten columns featured-slider"><?php 
+echo do_shortcode('[smartslider3 slider=2]');
 ?>
-
-
-			
-		<div class="featured-slider">
-		 <div>your content</div>
-		  <div>your content</div>
-		  <div>your content</div>
+		
 		</div>
 				  
 		

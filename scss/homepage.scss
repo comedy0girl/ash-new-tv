@@ -32,11 +32,23 @@
 		color: $brighter;
 		text-transform: uppercase;
 		font-family: $bold;
+
 	}
 }
 
 .my-work {
-	background-color: $dark;
+	// background-color: $dark;
+	h3 {
+		color: $dark;
+		font-family: $bold;
+		margin-bottom: 0;
+		text-transform: uppercase;
+	}
+	.ten.columns.featured-slider {
+	    width: 100% !important;
+	    overflow: hidden;
+	    margin: 0 auto;
+	}
 }
 
 .the-blog {
@@ -65,3 +77,5 @@
 		
 	}
 }
+
+

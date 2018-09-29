@@ -7,6 +7,10 @@ body {
 }
  p{
  	font-family: $regular;
+ 	img {
+ 		max-width: 100%;
+ 		height: auto;
+ 	}
  }
 
 h1, h2, h3, h4, h5, h6 {
@@ -184,4 +188,42 @@ a {
     	margin-top: -5em !important;
     	text-align: center;
     }
+}
+
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	border-color: $bright !important;
+}
+.wp-pagenavi a, .wp-pagenavi span {
+	color: $brighter;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+	border: 1px solid $brighter !important;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+	background: $bg;
+}
+
+.wp-pagenavi {
+	a {
+		color: $bright;
+	}
+}
+
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+a{
+	font-family: $italic;
+	color: $brighter;
+	&:hover {
+		color: $dark;
+	}
 }

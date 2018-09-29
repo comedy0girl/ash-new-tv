@@ -4,7 +4,6 @@
 			<div class="twelve columns the-footer">
 				<div class="three columns">
 					<div class="footer-inner">
-						
 						<?php dynamic_sidebar( 'footer_sidebar' ); ?>
 					</div>
 				</div>

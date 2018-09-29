@@ -20,6 +20,7 @@ include (TEMPLATEPATH . '/includes/_sides.php');
 				<p><?php echo $blurb ?></p>
 			</div>
 		</div>
+
 	<div class="twelve columns images container">
 		<div class="six columns portfolio-images" style="background-image:url('<?php echo $image1 ?>');"></div>
 		<div class="six columns portfolio-images" style="background-image:url('<?php echo $image2 ?>');"></div>
@@ -32,7 +33,6 @@ include (TEMPLATEPATH . '/includes/_sides.php');
 			<?php endif; ?>
 		</div>
 
-		
 
 		<div class="twelve columns gallery">
 			<h3>Full Gallery</h3>
