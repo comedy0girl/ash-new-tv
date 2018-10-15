@@ -47,9 +47,7 @@ include (TEMPLATEPATH . '/includes/_sides.php');
 
 
 
-		<div class="twelve columns gallery"><?php 
-			if ($post->post_content == '') { }
-    		else { ?>
+		<div class="twelve columns gallery"
 				<h3>Full Gallery</h3>
 				<div class="gallery-inner">
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -58,8 +56,7 @@ include (TEMPLATEPATH . '/includes/_sides.php');
 					<?php endwhile; else: ?>
 					<?php _e('Sorry, we couldn’t find the post you are looking for.'); ?>
 					<?php endif; ?>
-				</div><?php
-			} ?>	
+				</div>
 		</div>
 	</div>
 </div>
