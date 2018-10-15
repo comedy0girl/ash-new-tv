@@ -231,3 +231,13 @@ a{
 .mobile-menu-wrapper {
 	display: none;
 }
+
+a.classic-button.large {
+    width: 30%;
+    text-align: right;
+    background-color: $brighter;
+    margin: 1em 0;
+    &:hover {
+    	background-color: $bright;
+    }
+}

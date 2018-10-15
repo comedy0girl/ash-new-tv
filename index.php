@@ -54,9 +54,6 @@ echo do_shortcode('[smartslider3 slider=2]');
 						<div class="post-banner" style="background-image:url('<?php echo $backgroundImg[0]; ?>');">
 							<a class="classic-button" href="<?= get_permalink(); ?>">Read More ></a>
 						</div> 
-					
-	   				
-	   				
 	  			</div><?php 
 			endwhile; ?>
 		</div><?php 
@@ -65,10 +62,11 @@ echo do_shortcode('[smartslider3 slider=2]');
    			<p><?php __('No News'); ?></p><?php 
    		endif; ?>
 
+   		<div class="row twelve columns ">
 
+   			<a class="classic-button large" href="/blog">Full Blog ></a>
+   		</div>
 	</div>
-
-	
 </div>
 
 <?php get_footer(); ?>
