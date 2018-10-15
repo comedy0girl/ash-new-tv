@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 var windWidth = $(window).width();
     if(windWidth < 655) {
-        $('ul#menu-header').appendTo($('#the-mobi'));
+        $('ul#menu-new-header').appendTo($('#the-mobi'));
     };
 
  
