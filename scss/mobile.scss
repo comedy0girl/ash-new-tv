@@ -13,9 +13,7 @@
 	padding-left:13px;
 	padding-right: 13px;
 	
-}
-
-
+	}
 }
 
 @media only screen and (max-width : 800px) {
@@ -31,8 +29,25 @@
 			}
 		} 
 	}
+	.header-inner{
+   		.left {
+   			img {
+    			max-width: 40%;
+			}
+   		}
+   	} 
 
 }
+
+@media only screen and (max-width : 655px) { 
+	#cssmenu {
+		display: none;
+	}
+	.mobile-menu-wrapper {
+		display: block;
+	}
+}
+
 @media only screen and (max-width : 600px) {
 	.header-inner {
 		.left {

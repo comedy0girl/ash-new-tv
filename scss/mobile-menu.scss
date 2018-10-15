@@ -15,3 +15,56 @@
 // 		}
 // 	}
 // }
+
+
+.mobile-menu-wrapper {
+	background-color: $darkBG;
+	.mobile-menu-inner {
+		float: right;
+		padding: 0.5em 2em 0.5em 0;
+		display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+		p{
+			float: left;
+			padding-right: 1em;
+			color: $bg;
+			margin: 0;
+			text-transform: uppercase;
+		}
+		.good-burger {
+			float: left;
+			div {
+			    width: 35px;
+			    height: 5px;
+			    margin: 6px 0;
+			    background-color: $bg;
+			}
+		}	
+	}
+}
+
+#the-mobi {
+	display: none;
+
+	ul {
+		text-align: left;
+		padding: 1em;
+		li {
+			list-style: none;
+			ul {
+				display: none;
+			}
+		}
+	}
+}
+
+.show-it {
+	display: block !important;
+}

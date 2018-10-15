@@ -2,16 +2,16 @@
 get_header(); ?><?php
 include (TEMPLATEPATH . '/includes/_sides.php'); ?>
 
+
+
 <div class="container">
-    <div class="error-container twelve columns">
+    <div class="news-container twelve columns">  
+    	<h2><?php _e( 'What dya dooooo?', 'ash' ); ?></h2>
     	<canvas id="canvas" style="width: 100%;"></canvas>
-	        <div class="error-inner">
-	        	<h1 class="page-title"><?php _e( 'Not Found', 'ash' ); ?></h1> 
-	            <h2><?php _e( 'What didya dooooo?', 'ash' ); ?></h2>
-						<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'ash' ); ?></p>
-	        </div>
-        
+        <div class="twelve columns biggie">
+	      
+			<p><?php _e( 'I think you are lost friend. Try going back to the home page', 'ash' ); ?></p>
+        </div>
     </div>
 </div>
-
 <?php get_footer(); ?>

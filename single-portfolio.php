@@ -34,16 +34,32 @@ include (TEMPLATEPATH . '/includes/_sides.php');
 		</div>
 
 
-		<div class="twelve columns gallery">
-			<h3>Full Gallery</h3>
-			<div class="gallery-inner">
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<?php the_content(__('(more...)')); ?>
-				
-				<?php endwhile; else: ?>
-				<?php _e('Sorry, we couldn’t find the post you are looking for.'); ?>
-				<?php endif; ?>
-			</div>
+
+
+        <div class="twelve columns biggie scripts">
+        	<h2>The Content</h2><?php 
+            if (have_posts()) : while (have_posts()) : the_post(); the_content(__('(more...)')); 
+                endwhile; else: 
+                 _e('Sorry, we couldn’t find the post you are looking for.'); 
+                endif; ?>
+        </div>
+    <?php } ?>
+
+
+
+		<div class="twelve columns gallery"><?php 
+			if ($post->post_content == '') { }
+    		else { ?>
+				<h3>Full Gallery</h3>
+				<div class="gallery-inner">
+					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<?php the_content(__('(more...)')); ?>
+					
+					<?php endwhile; else: ?>
+					<?php _e('Sorry, we couldn’t find the post you are looking for.'); ?>
+					<?php endif; ?>
+				</div><?php
+			} ?>	
 		</div>
 	</div>
 </div>

@@ -1,6 +1,7 @@
 <?php include (TEMPLATEPATH . '/includes/_wrapper.php'); ?>
 
-<header >
+<header>
+
 	<div class="row twelve columns header-inner biggie container">
 		<div class="three columns left">
 			<a href="/">

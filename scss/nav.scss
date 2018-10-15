@@ -93,7 +93,6 @@ $thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
 #cssmenu > ul > li > a:after {
 	content: '';
 	position: absolute;
-	
 	top: -1px;
 	bottom: -1px;
 	right: -2px;

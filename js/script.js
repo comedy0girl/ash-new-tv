@@ -1,52 +1,30 @@
 $(document).ready(function() {
 
-  // Check if element is scrolled into view
-  function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+var windWidth = $(window).width();
+    if(windWidth < 655) {
+        $('ul#menu-header').appendTo($('#the-mobi'));
+    };
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
-
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-  }
-  // If element is scrolled into view, fade it in
-  $(window).scroll(function() {
-    $('.scroll-animations .animated').each(function() {
-      if (isScrolledIntoView(this) === true) {
-        $(this).addClass('fadeInUp');
-      }
-    });
-  });
+ 
+    $('.good-burger').on('click', function() {
+    $('#the-mobi').animate({
+        'width': 'toggle'
+    }, 1000); });
 
 
 
-   //wrap all iframe videos in class to make responsive
-    var $iframes = $("iframe");
+//wrap all iframe videos in class to make responsive
+var $iframes = $("iframe");
 
-    $iframes.each(function () {
-        $(this).removeAttr("width");
-        $(this).removeAttr("height");
-        $(this).wrap("<div class='videowrapper'></div>");
-    });
+$iframes.each(function () {
+    $(this).removeAttr("width");
+    $(this).removeAttr("height");
+    $(this).wrap("<div class='videowrapper'></div>");
+});
 
+var canvas = document.getElementById('canvas'),
+ctx = canvas.getContext('2d');
 
-
-
-
-
-  var canvas = document.getElementById('canvas'),
-    ctx = canvas.getContext('2d');
-
-// closer to analouge appearance
-// canvas.width = canvas.height = 256;
-
-// function resize() {
-//     canvas.style.width = window.innerWidth + 'px';
-//     canvas.style.height = window.innerHeight + 'px';
-// }
-// resize();
-// window.onresize = resize;
 
 function noise(ctx) {
 
