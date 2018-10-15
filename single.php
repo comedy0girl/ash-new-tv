@@ -42,7 +42,9 @@ $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 
                 $prevPost = get_posts($args);
                 foreach ($prevPost as $post) {
                     setup_postdata($post); ?>
+                <p class="Previously">Previously On Ash Loves Tv...</p>
                 <div class="post-previous">
+                    
                     <div class="prev-img">
                         <a href="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail('thumbnail'); ?></a>
@@ -64,7 +66,9 @@ $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 
             foreach ($nextPost as $post) {
                 setup_postdata($post); ?>
             <div class="one-half column right">
+                <p class="Next">Up Next On Ash Loves TV...</p>
                 <div class="post-next">
+                    
                     <div class="prev-img">
                         <a href="<?php the_permalink(); ?>">
                         <?php the_post_thumbnail('thumbnail'); ?></a>
