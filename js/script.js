@@ -1,15 +1,15 @@
 $(document).ready(function() {
 
-var windWidth = $(window).width();
-    if(windWidth < 655) {
-        $('ul#menu-new-header').appendTo($('#the-mobi'));
-    };
+// var windWidth = $(window).width();
+//     if(windWidth < 655) {
+//         $('ul#menu-new-header').appendTo($('#the-mobi'));
+//     };
 
 
 
-    $('.good-burger').click(function() {
-        $('#the-mobi').slideDown();
-    });
+//     $('.good-burger').click(function() {
+//         $('#the-mobi').slideDown();
+//     });
  
    
 
