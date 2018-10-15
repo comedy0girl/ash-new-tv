@@ -43,11 +43,11 @@ include (TEMPLATEPATH . '/includes/_sides.php');
                  _e('Sorry, we couldn’t find the post you are looking for.'); 
                 endif; ?>
         </div>
-    <?php } ?>
+    
 
 
 
-		<div class="twelve columns gallery"
+		<div class="twelve columns gallery">
 				<h3>Full Gallery</h3>
 				<div class="gallery-inner">
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
