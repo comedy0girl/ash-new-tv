@@ -103,12 +103,18 @@ $thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
 #cssmenu ul li.has-sub:hover > a:after {
 	top: 0;
 	bottom: 0;
+	
+     	
 }
 #cssmenu > ul > li.has-sub > a:before {
 	content: '';
 	position: absolute;
 	top: 32px;
 	right: 6px;
+
+	 content: "\21E2";
+    position: absolute;
+    right: 5px;
 	
 }
 #cssmenu > ul > li.has-sub:hover > a:before {
