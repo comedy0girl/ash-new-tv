@@ -83,7 +83,7 @@ $thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
 			}
 			
 		}
-		li.has-sub {
+		li.menu-item-has-children {
 				a {
 					&:after {
 						content:'\25bc';
@@ -102,6 +102,16 @@ $thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
 						right: 6px;
 					}
 				}
+				ul {
+				li.menu-item-object-page {
+					a {
+						&:after {
+							
+							visibility: hidden;
+						}
+					}
+				}
+			}
 				&:hover {
 					color: $bright;
 					ul {
