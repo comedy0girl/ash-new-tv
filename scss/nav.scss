@@ -84,14 +84,13 @@ $thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
 			
 		}
 		li.has-sub {
-				
 				a {
 					&:after {
-					content: '';
-					position: absolute;
-					top: 32px;
-					right: 6px;
-				}
+						content:'\25bc';
+						color: $bright;
+						margin-top: 0.7em;
+					}
+					
 					&:after {
 						top: 0;
 						bottom: 0;

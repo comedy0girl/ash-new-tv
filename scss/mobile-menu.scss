@@ -52,14 +52,36 @@
 
 #the-mobi {
 	display: none;
-
 	ul {
 		text-align: left;
 		padding: 1em;
 		li {
 			list-style: none;
+			a {
+				font-family: $bold;
+			}
+			
 			ul {
 				display: none;
+			}
+		}
+		li.menu-item-has-children {
+			a {
+				&:after {
+					content:'\25bc';
+					color: $bright;
+					margin-top: 0.7em;
+				}
+			}
+			ul {
+				li.menu-item-object-page {
+					a {
+						&:after {
+							
+							visibility: hidden;
+						}
+					}
+				}
 			}
 		}
 	}

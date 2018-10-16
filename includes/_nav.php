@@ -5,6 +5,7 @@
 	'walker' => new CSS_Menu_Walker()
 )); ?>
 
+
 <div class="twelve columns mobile-menu-wrapper mobile">
 	<div class="mobile-menu-inner">
 		<p>Menu</p>
@@ -17,8 +18,4 @@
 	
 </div>
 <div class="twelve columns" id="the-mobi">
-	</div>
-	
-
-
-	
+</div>
