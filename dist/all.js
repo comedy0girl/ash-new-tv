@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
 var windWidth = $(window).width();
-    if(windWidth < 655) {
-        $('ul#menu-header-menu').appendTo($('#the-mobi'));
+    if(windWidth < 800) {
+        $('ul#menu-new-header').appendTo($('#the-mobi'));
     };
 
     $('.good-burger').click(function() {
