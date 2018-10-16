@@ -1,24 +1,25 @@
 $(document).ready(function() {
 
-var windWidth = $(window).width();
-    if(windWidth < 800) {
-        $('ul#menu-new-header').appendTo($('#the-mobi'));
-    };
+// var windWidth = $(window).width();
+//     if(windWidth < 800) {
+//         $('ul#menu-header-menu').appendTo($('#the-mobi'));
+//         // $('ul#menu-new-header').appendTo($('#the-mobi'));
+//     };
 
-    $('.good-burger').click(function() {
-        $('#the-mobi').slideToggle('slow');
-    })
+//     $('.good-burger').click(function() {
+//         $('#the-mobi').slideToggle('slow');
+//     })
 
 
-    $('#the-mobi li.has-sub').click(function() {
-        var $this = $(this);
-  if ($(this).children('ul:visible').length) {
-    $(this).find('> ul:visible').stop().slideUp('slow');
-  } else {
-    $(this).children('ul').stop().slideToggle('slow');
-  }
-  return false;
-    });
+//     $('#the-mobi li.menu-item-has-children').click(function() {
+//         var $this = $(this);
+//         if ($(this).children('ul:visible').length) {
+//           $(this).find('> ul:visible').stop().slideUp('slow');
+//         } else {
+//           $(this).children('ul').stop().slideToggle('slow');
+//         }
+//         return false;
+//     });
 
 //wrap all iframe videos in class to make responsive
 var $iframes = $("iframe");

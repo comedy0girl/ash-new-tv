@@ -85,11 +85,11 @@ $thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
 		}
 		li.menu-item-has-children {
 				a {
-					&:after {
-						content:'\25bc';
-						color: $bright;
-						margin-top: 0.7em;
-					}
+					// &:after {
+					// 	content:'\25bc';
+					// 	color: $bright;
+					// 	margin-top: 0.7em;
+					// }
 					
 					&:after {
 						top: 0;
