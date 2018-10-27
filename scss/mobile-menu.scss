@@ -1,24 +1,6 @@
-// @media only screen and (max-width : 800px) { 
-
-// 	div#cssmenu {
-// 		// display: none;
-// 		background: #ffffff;
-// 		width: 100%;
-// 		ul{
-// 			background: #ffffff;
-// 			z-index: 9999;
-// 			margin-top: 18em;
-// 			width: 100%;
-// 			li {
-// 				float: none;
-// 			}
-// 		}
-// 	}
-// }
-
-
 .mobile-menu-wrapper {
 	background-color: $darkBG;
+	margin-bottom: 1em;
 	.mobile-menu-inner {
 		float: right;
 		padding: 0.5em 2em 0.5em 0;
@@ -54,28 +36,70 @@
 	display: none;
 	ul {
 		text-align: left;
-		padding: 1em;
+		background-color: $bg;
 		li {
 			list-style: none;
+			padding: 0.2em 1em;
+			font-family: $bold;
+				text-transform: uppercase;
+				font-size: 1.3em;
+				display: block;
+    
+    
+			    text-align: left;
+			    background-color: $bg;
+			    color: $darkBG;
+
+			span.arrow {
+				width: 30px;
+				height: 30px;
+			    text-align: center;
+			    position: relative;
+			    right: 0;
+			    display: inline-block;
+			    transition: transform 0.3s;
+			    float: right;
+			    &:before{
+			    	border: solid $darkBG;
+				    border-width: 0 2px 2px 0;
+				    display: inline-block;
+				    padding: 2px;
+				    content: '';
+			    }
+			}
 			a {
 				font-family: $bold;
+				text-transform: uppercase;
+			
+				display: block;
+    
+    
+			    text-align: left;
+			    background-color: $bg;
+			    color: $darkBG;
 			}
 			
 			ul {
 				display: none;
 			}
 		}
+
+		
+		    
 		li.menu-item-has-children {
 			a {
 				&:after {
-					content:'\25bc';
-					color: $bright;
-					margin-top: 0.7em;
+					visibility: hidden;
 				}
 			}
 			ul {
+				background-color: $light;
+				margin: 0;
 				li.menu-item-object-page {
+					background-color: transparent;
 					a {
+						font-size: 0.8em;
+						background-color: transparent;
 						&:after {
 							
 							visibility: hidden;

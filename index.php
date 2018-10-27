@@ -18,7 +18,7 @@
 		</div>
 	</div>
 
-	<div class="animated fadeInRigthBig twelve columns quote biggie bright">
+	<div class="animated fadeInRigthBig twelve columns quote biggie bright main-page">
 		<p>I just love <br/>television so much.</p>
 		<h5>Kenneth Parcell (30 Rock)</h5>
 	</div>

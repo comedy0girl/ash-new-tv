@@ -26,6 +26,27 @@
 	}
 }
 
+
+.quote.main-page {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid;
+	p{
+		font-family: $bold;
+		text-transform: uppercase;
+		font-size: 8rem;
+		line-height: 0.8em;
+		margin-bottom: 0;
+	}
+	h5 {
+		color: $text;
+		font-family: $italic;
+		text-align: right;
+	}
+}
+
+
+
 .about-me {
 	background-color: $bg;
 	h3 {

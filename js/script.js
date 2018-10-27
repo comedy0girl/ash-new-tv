@@ -2,8 +2,8 @@ $(document).ready(function() {
 
 var windWidth = $(window).width();
     if(windWidth < 800) {
-        // $('ul#menu-header-menu').appendTo($('#the-mobi'));
-        $('ul#menu-new-header').appendTo($('#the-mobi'));
+        $('ul#menu-header-menu').appendTo($('#the-mobi'));
+        // $('ul#menu-new-header').appendTo($('#the-mobi'));
     };
 
     $('.good-burger').click(function() {
@@ -11,17 +11,43 @@ var windWidth = $(window).width();
     });
 
 
-    $('#the-mobi li.menu-item-has-children').click(function() {
-        var $this = $(this);
-        if ($(this).children('ul:visible').length) {
-
-          $(this).children.attr('<?= get_permalink(); ?>');
-          // $(this).find('> ul:visible').stop().slideUp('slow');
-        } else {
-          $(this).children('ul').stop().slideToggle('slow');
-        }
-        return false;
+    $.each($('.menu li.menu-item'), function (index, value) {
+      if ($(this).children('ul').length > 0 || $(this).children('div').length > 0) {
+        $(this).children('a').append($('<span class="arrow"></span>'));
+      }
     });
+
+
+    $('#the-mobi li.menu-item-has-children > a').contents().unwrap();
+
+    $('#the-mobi li.menu-item-has-children').click(function() {
+        
+        var $this = $(this);
+        $(this).children('ul').slideToggle('slow');
+
+
+        $(this).children('ul li:active a').click(function() {
+          
+          $(this).children.attr('<?= get_permalink(); ?>');
+        });
+        
+
+        // if ($(this).children('ul:visible').length) {
+
+        //   // $(this).children.attr('<?= get_permalink(); ?>');
+        //   // $(this).find('> ul:visible').stop().slideUp('slow');
+        // } else {
+        //   $(this).children('ul').slideToggle('slow');
+        // }
+         // return false;
+    });
+
+
+    // $('#the-mobi ul li span.arrow').click(function() {
+    //       var $this = $(this);
+    //       alert("close me");
+    //       $(this).children('ul').stop().slideToggle('slow');
+    // });
 
 
 

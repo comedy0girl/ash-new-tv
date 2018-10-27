@@ -37,6 +37,16 @@
    		}
    	} 
 
+   	.twelve.columns.mobile-menu-wrapper.mobile {
+   		display: block;
+   	}
+   	.row.twelve.columns.header-inner.biggie.container {
+   		padding: 0;
+   		margin: 0;
+   		margin: 0 auto;
+   		width: 94%;
+   	}
+
 }
 
 @media only screen and (max-width : 655px) { 
@@ -84,6 +94,12 @@
 		}
 	}
 
+	.quote.main-page {
+		p{
+			font-size: 6rem;
+		}
+	}
+
 }
 
 @media only screen and (max-width : 650px) {
@@ -101,7 +117,7 @@
 @media only screen and (max-width : 550px) { 
 	.quote {
 		p{
-			font-size: 4.5rem;
+			font-size: 2em;
 		}
 	}
 
@@ -137,3 +153,17 @@
 
 }
 
+
+@media only screen and (max-width : 450px) { 
+
+.quote.main-page {
+		p{
+			font-size: 4.5rem;
+		}
+	}
+	.quote {
+		p{
+			font-size: 1.7em;
+		}
+	}
+}
